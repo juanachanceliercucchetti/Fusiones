@@ -1,55 +1,58 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #111; /* Fondo negro */
+    color: #f0f0f0; /* Texto blanco-gris */
 }
 
 header {
-    background-image: url('path_to_header_image.jpg');
+    background-image: url('ruta/de/tu/imagen-de-fondo.jpg');
     background-size: cover;
     background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
-h1, h2 {
-    font-family: 'Playfair Display', serif;
+.h1{
+    color: #B22727;
 }
-
 .navbar {
-    background-color: #333;
+    background-color: #222; /* Más oscuro */
 }
 
-.navbar a {
-    font-weight: bold;
+.navbar .nav-link {
+    color: #f0f0f0; /* Color claro */
 }
 
-.section img {
-    max-width: 100%;
+.navbar .nav-link:hover {
+    color: #e60023; /* Rojo de acento */
+}
+
+.section {
+    background-color: #222;
+    padding: 40px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
-footer {
+
+#integrantes {
     background-color: #333;
-    color: #fff;
-    text-align: center;
+    padding: 20px;
+    color: #e60023; /* Rojo */
+}
+
+footer {
+    background-color: #000;
+    color: #f0f0f0;
     padding: 20px 0;
 }
 
-footer p {
-    margin-bottom: 15px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-icon img {
+.social-icons img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
 }
 
-.social-icon img:hover {
+.social-icons img:hover {
     transform: scale(1.1);
 }
 
