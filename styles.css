@@ -1,30 +1,116 @@
 body {
+        
     font-family: 'Roboto', sans-serif;
     background-color: #111; /* Fondo negro */
     color: #f0f0f0; /* Texto blanco-gris */
 }
 
+
+
+
+/* Estilo para el header */
 header {
-    background-image: url('ruta/de/tu/imagen-de-fondo.jpg');
+    position: relative;
+    width: 100%;
+    height: 200px; /* Puedes ajustar la altura a tu gusto */
+    background-image: url('data/ciclo\ \(3\).jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
-    padding: 60px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0.8; /* Baja opacidad de la imagen de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.h5{
-    color: #B22727;
+
+.header-content {
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
 }
+
+.header-title h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-title p {
+    font-size: 1.2rem;
+}
+
+.integrantes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dropdown-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+}
+
+.dropdown-content p {
+    margin: 0;
+    padding: 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mostrar el contenido desplegable cuando se haga clic en el botón */
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+/* Estilos para la barra de navegación */
 .navbar {
-    background-color: #222; /* Más oscuro */
+    position: relative;
+    background-color: transparent;
+    padding: 1rem 0;
 }
 
-.navbar .nav-link {
-    color: #f0f0f0; /* Color claro */
+/* Estilo de la imagen de fondo */
+.navbar .navbar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; /* Baja opacidad */
+    z-index: -1; /* Asegura que la imagen quede detrás del contenido */
 }
 
-.navbar .nav-link:hover {
-    color: #e60023; /* Rojo de acento */
+/* Estilos adicionales de la navbar */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Cambiar color del borde */
 }
 
 .section {
@@ -38,6 +124,26 @@ header {
     background-color: #333;
     padding: 20px;
     color: #e60023; /* Rojo */
+}
+/* Estilo para los textos */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 8s ease-out; /* Animación de desvanecimiento */
+    color: rgb(167, 191, 255); /* El título principal "Fusiones" */
+
+}
+
+
+h2 {
+    color: rgb(255, 0, 0); /* Todos los títulos h2 */
+}
+
+h5, h6 {
+    color: rgb(168, 43, 43); /* Todos los títulos h5 y h6 */
 }
 
 footer {
