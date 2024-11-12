@@ -158,4 +158,57 @@ footer {
 .social-icons img:hover {
     transform: scale(1.1);
 }
+/* Estilos para la flecha */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgb(120, 151, 236); /* Color azul (puedes cambiarlo) */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid rgb(120, 151, 236);
+    border-radius: 5px;
+}
+
+/* Efecto hover para la flecha */
+.back-to-top:hover {
+    background-color: rgb(120, 151, 236);
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenedor para las imágenes */
+.image-container {
+    display: flex;                      /* Usamos flexbox para alinear las imágenes */
+    justify-content: space-between;     /* Espacio entre las imágenes */
+    gap: 20px;                          /* Espacio entre las imágenes */
+    margin-bottom: 20px;                /* Margen debajo de las imágenes */
+}
+
+/* Para cada imagen */
+.image-container img {
+    width: 100%;                        /* La imagen ocupa el 100% de su contenedor */
+    height: auto;                       /* Mantiene la relación de aspecto */
+}
+
+/* Texto debajo de las imágenes */
+.text-center {
+    text-align: center;                 /* Centra el texto */
+    font-size: 1rem;                    /* Ajusta el tamaño del texto */
+    margin-top: 10px;                   /* Espacio por encima del texto */
+}
+
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 767px) {
+    .image-container {
+        flex-direction: column;        /* Las imágenes se apilan una sobre la otra */
+        align-items: center;           /* Centra las imágenes */
+    }
+
+    .image-container img {
+        width: 100%;                     /* Las imágenes ocuparán el 80% del ancho de la pantalla */
+    }
+}
+
 
